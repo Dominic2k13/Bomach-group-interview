@@ -1,0 +1,110 @@
+[
+  {
+    "id": "NT-2024-001",
+    "items": [
+      {
+        "product": {
+          "id": "p1",
+          "slug": "obsidian-oversized-tee",
+          "name": "Obsidian Oversized Tee",
+          "price": 18500,
+          "category": "tops",
+          "description": "",
+          "images": ["/images/tee-1.jpg"],
+          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+          "featured": true,
+          "inStock": true
+        },
+        "size": "L",
+        "quantity": 2
+      },
+      {
+        "product": {
+          "id": "p6",
+          "slug": "signature-cap",
+          "name": "Signature Cap",
+          "price": 12000,
+          "category": "accessories",
+          "description": "",
+          "images": ["/images/cap-1.jpg"],
+          "sizes": ["ONE SIZE"],
+          "featured": true,
+          "inStock": true
+        },
+        "size": "ONE SIZE",
+        "quantity": 1
+      }
+    ],
+    "address": {
+      "fullName": "Chidi Okonkwo",
+      "street": "14 Ademola Adetokunbo Crescent",
+      "city": "Lagos",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "postalCode": "101233"
+    },
+    "subtotal": 49000,
+    "deliveryEstimate": {
+      "minDays": 1,
+      "maxDays": 2,
+      "label": "1–2 business days",
+      "zone": "Nigeria – Major City"
+    },
+    "status": "delivered",
+    "placedAt": "2024-11-10T09:00:00.000Z",
+    "estimatedDelivery": "2024-11-12",
+    "statusSteps": [
+      { "status": "processing", "label": "Order Placed", "date": "2024-11-10", "completed": true },
+      { "status": "confirmed", "label": "Confirmed", "date": "2024-11-10", "completed": true },
+      { "status": "shipped", "label": "Shipped", "date": "2024-11-11", "completed": true },
+      { "status": "out_for_delivery", "label": "Out for Delivery", "date": "2024-11-12", "completed": true },
+      { "status": "delivered", "label": "Delivered", "date": "2024-11-12", "completed": true }
+    ]
+  },
+  {
+    "id": "NT-2024-002",
+    "items": [
+      {
+        "product": {
+          "id": "p3",
+          "slug": "arc-bomber-jacket",
+          "name": "Arc Bomber Jacket",
+          "price": 68000,
+          "category": "outerwear",
+          "description": "",
+          "images": ["/images/bomber-1.jpg"],
+          "sizes": ["S", "M", "L", "XL"],
+          "featured": true,
+          "inStock": true
+        },
+        "size": "M",
+        "quantity": 1
+      }
+    ],
+    "address": {
+      "fullName": "Chidi Okonkwo",
+      "street": "14 Ademola Adetokunbo Crescent",
+      "city": "Lagos",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "postalCode": "101233"
+    },
+    "subtotal": 68000,
+    "deliveryEstimate": {
+      "minDays": 1,
+      "maxDays": 2,
+      "label": "1–2 business days",
+      "zone": "Nigeria – Major City"
+    },
+    "status": "shipped",
+    "placedAt": "2024-12-01T14:30:00.000Z",
+    "estimatedDelivery": "2024-12-03",
+    "statusSteps": [
+      { "status": "processing", "label": "Order Placed", "date": "2024-12-01", "completed": true },
+      { "status": "confirmed", "label": "Confirmed", "date": "2024-12-01", "completed": true },
+      { "status": "shipped", "label": "Shipped", "date": "2024-12-02", "completed": true },
+      { "status": "out_for_delivery", "label": "Out for Delivery", "date": null, "completed": false },
+      { "status": "delivered", "label": "Delivered", "date": null, "completed": false }
+    ]
+  }
+]
