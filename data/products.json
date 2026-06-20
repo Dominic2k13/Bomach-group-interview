@@ -6,7 +6,7 @@
     "price": 18500,
     "category": "tops",
     "description": "A heavyweight 320gsm cotton tee cut for an oversized silhouette. Drop shoulders, ribbed collar, and a subtle chest logo in tonal ink. The kind of piece you reach for every time.",
-    "images": ["/images/tee-1.jpg", "/images/tee-1b.jpg"],
+    "images": ["/images/clothe-1.jpg", "/images/clothe-2.jpg"],
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
     "featured": true,
     "inStock": true
@@ -18,7 +18,7 @@
     "price": 32000,
     "category": "bottoms",
     "description": "Relaxed wide-leg trousers in a premium linen-cotton blend. Elasticated waistband, side pockets, and a clean front seam. Tailored enough for dinner, relaxed enough for everything else.",
-    "images": ["/images/trousers-1.jpg"],
+    "images": ["/images/clothe-2.jpg"],
     "sizes": ["XS", "S", "M", "L", "XL"],
     "featured": true,
     "inStock": true
@@ -30,7 +30,7 @@
     "price": 68000,
     "category": "outerwear",
     "description": "A structured bomber in satin-finish nylon with clean arc stitching across the back. Ribbed cuffs and hem, inner mesh lining. Statement outerwear that means business.",
-    "images": ["/images/bomber-1.jpg"],
+    "images": ["/images/clothe-3.jpg"],
     "sizes": ["S", "M", "L", "XL"],
     "featured": true,
     "inStock": true
@@ -42,7 +42,7 @@
     "price": 28500,
     "category": "tops",
     "description": "Medium-weight fleece-backed sweatshirt with a clean crewneck collar. No graphics, no noise — just excellent construction and a perfect boxy fit.",
-    "images": ["/images/crew-1.jpg"],
+    "images": ["/images/clothe-4.jpg"],
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
     "featured": false,
     "inStock": true
@@ -54,7 +54,7 @@
     "price": 22000,
     "category": "bottoms",
     "description": "Six-pocket cargo shorts in washed canvas. Slightly tapered leg, button fly, and a subtle tonal logo patch at the thigh. Utility with restraint.",
-    "images": ["/images/cargo-1.jpg"],
+    "images": ["/images/clothe-5.jpg"],
     "sizes": ["S", "M", "L", "XL"],
     "featured": false,
     "inStock": true
@@ -66,7 +66,7 @@
     "price": 12000,
     "category": "accessories",
     "description": "6-panel structured cap in washed twill. Embroidered 'NT' logo on the front panel, adjustable strap at the back. The finishing touch.",
-    "images": ["/images/cap-1.jpg"],
+    "images": ["/images/clothe-1.jpg"],
     "sizes": ["ONE SIZE"],
     "featured": true,
     "inStock": true
@@ -78,7 +78,7 @@
     "price": 38000,
     "category": "tops",
     "description": "Heavyweight 400gsm French terry hoodie. Kangaroo pocket, double-lined hood, and raw-edge seam detailing. Available in void black — our darkest dye lot.",
-    "images": ["/images/hoodie-1.jpg"],
+    "images": ["/images/clothe-3.jpg"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "featured": false,
     "inStock": true
@@ -90,7 +90,7 @@
     "price": 15000,
     "category": "accessories",
     "description": "Heavy canvas tote with reinforced handles and an internal zip pocket. Screenprinted NAIRA THREADS wordmark on the face. Carries everything.",
-    "images": ["/images/tote-1.jpg"],
+    "images": ["/images/clothe-4.jpg"],
     "sizes": ["ONE SIZE"],
     "featured": false,
     "inStock": true

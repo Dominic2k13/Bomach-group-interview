@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { useCartStore } from "@/store/cartStore";
@@ -43,11 +44,20 @@ export default function CartPage() {
               transition={{ delay: i * 0.05 }}
               className="flex gap-5 pb-6 border-b border-stone-100"
             >
-              {/* Image placeholder */}
-              <div className="w-20 h-24 bg-stone-100 shrink-0 flex items-center justify-center">
-                <span className="text-[9px] text-stone-400 tracking-widest uppercase">
-                  {item.product.category}
-                </span>
+              {/* Product image */}
+              <div className="w-20 h-24 bg-stone-100 shrink-0 relative overflow-hidden">
+                {item.product.images?.[0] ? (
+                  <Image
+                    src={item.product.images[0]}
+                    alt={item.product.name}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <span className="absolute inset-0 flex items-center justify-center text-[9px] text-stone-400 tracking-widest uppercase">
+                    {item.product.category}
+                  </span>
+                )}
               </div>
 
               <div className="flex-1 space-y-1">

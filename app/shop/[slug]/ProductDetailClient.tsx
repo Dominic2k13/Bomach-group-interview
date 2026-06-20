@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { formatPrice } from "@/lib/formatPrice";
 import { useCartStore } from "@/store/cartStore";
@@ -24,19 +25,34 @@ export default function ProductDetailClient({ product }: Props) {
     setTimeout(() => setAdded(false), 2000);
   }
 
+  const image = product.images?.[0];
+
   return (
-    <div className="min-h-screen pt-24 px-6 md:px-12 max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12">
-        {/* Image placeholder */}
+    <div className="min-h-screen pt-20 md:pt-24 px-4 md:px-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 py-8 md:py-12">
+        {/* Product image */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="aspect-[3/4] bg-stone-100 relative flex items-center justify-center"
+          className="aspect-[3/4] bg-stone-100 relative overflow-hidden"
         >
-          <span className="text-xs tracking-widest uppercase text-stone-400">
-            {product.category}
-          </span>
+          {image ? (
+            <Image
+              src={image}
+              alt={product.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+              priority
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-xs tracking-widest uppercase text-stone-400">
+                {product.category}
+              </span>
+            </div>
+          )}
         </motion.div>
 
         {/* Product info */}
@@ -50,7 +66,7 @@ export default function ProductDetailClient({ product }: Props) {
             <p className="text-xs tracking-widest uppercase text-[#c9a84c] mb-2">
               {product.category}
             </p>
-            <h1 className="text-3xl font-light text-stone-900 mb-2">{product.name}</h1>
+            <h1 className="text-2xl md:text-3xl font-light text-stone-900 mb-2">{product.name}</h1>
             <p className="text-xl text-stone-700">{formatPrice(product.price)}</p>
           </div>
 
